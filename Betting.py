@@ -57,17 +57,42 @@ with tabs[0]:
 # "Feature" tab
 with tabs[1]:
     st.header("Features")
-    st.write("View the latest NBA games, odds, and betting information.")
+    st.write(":white_check_mark: The Board :moneybag: showing future games with odds.")
+    st.write(":white_check_mark: Trends :bar_chart: showing trends of records, covers, odds")
+    st.write(":white_check_mark: System :lock: shows bets that strategy and models are picking")
+    st.write(":white_check_mark: Performance :rocket: shows your own picks, strategy, public records")
+    st.write(":white_check_mark: Education :books: shows odds, strategy and relavant articles")    
     
 
 # "Education" tab
 with tabs[2]:
     st.header("Education")
-    st.write("View the latest NFL games, odds, and betting information.")
+
+    with st.expander("Odds Format - Decimal"):
+        st.write("Betting Odds will be displayed as European/Decimal Odds. This graphic will give an example of how they compare to traditional Moneyline/US Odds.")
+        st.image("https://www.soccerwidow.com/wp-content/uploads/2013/11/odds-conversion-table.jpg")
+
+    with st.expander("Types of Bets"):
+        st.write("Moneyline - ")
+        st.write("Point Spread - ")
+        st.write("Totals - ")
+        st.write("Parlay - ")
+        st.write("Futures - ")
+        st.write("Props - ")
+
+    with st.expander("Bankroll Management"):
+        st.write("Spend it all, YOLO")
+        st.write("Kelly Criterion")
 
 
 # "Roadmap" tab
 with tabs[3]:
     st.header("Roadmap")
-    st.write("View the latest MLB games, odds, and betting information.")
+    st.write(":construction: Weather Data")
+    st.write(":construction: Public Betting Data")
+    st.write(":construction: Coaching Tenure")
+    st.write(":construction: Website Login")
+    st.write(":construction: Bets Taken History")
+    st.write(":construction: Twitter bot")
+    st.write(":construction: News/Injury Updates")
  
